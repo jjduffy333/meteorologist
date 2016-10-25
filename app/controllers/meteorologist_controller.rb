@@ -17,7 +17,11 @@ class MeteorologistController < ApplicationController
     #   characters removed, is in the variable @street_address_without_spaces.
     # ==========================================================================
 
+    url1 = "http://maps.googleapis.com/maps/api/geocode/json?address="+@street_address_without_spaces
 
+
+
+    url2 =   url = "https://api.darksky.net/forecast/ecdfb6c54f327aeb8b3afea2daf64b94/"+@lat+","+@lng
 
     @current_temperature = "Replace this string with your answer."
 
